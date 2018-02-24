@@ -1,219 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
     <!-- OPTIONAL: description -->
     <meta name="description" content="">
     <!-- OPTIONAL: author -->
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="icon.png" />
+   
+    <title>Sameer Marulkar Resume</title>  
+	
+	<script language="javascript" type="text/javascript" src="p5.js"></script>
+	<script language="javascript" type="text/javascript" src="neuron.js"></script>
+	<script language="javascript" type="text/javascript" src="connection.js"></script>
+	<script language="javascript" type="text/javascript" src="network.js"></script>
+	<script language="javascript" type="text/javascript" src="sketch.js"></script>   
+	
+	<style>
+	h1   {color: blue;}
+	h3 	 {font-family: Verdana, Geneva, sans-serif;}
+	h4 	 {font-family: Verdana, Geneva, sans-serif;}
+	p    {font-family: Verdana, Geneva, sans-serif;}
+	</style>
+ </head>
+ <body>
 
-		<!-- EDIT: title -->
-    <title>Sameer Marulkar</title>
+   <div class="header" id="headerwrap">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-12">
+           <h1>Sameer Marulkar</h1>
+           <h3>Computer Vision Engineer | 
+            <a href="mailto:sameermarulkar@outlook.com">sameermarulkar@outlook.com</a>
+           </h3>
+         </div><!--/.col-lg-12-->
+       </div><!--/.row-->
+     </div><!--/.container-->
+   </div><!--/.#headerwrap-->
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-
-    <!-- Link the main.css stylesheet -->
-    <link href="css/main.css" rel="stylesheet">
-
-    <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
-
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-	<div id="header" class="header">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-12">
-					<!-- EDIT: name -->
-					<h1>Sameer Marulkar</h1>
-					<!-- EDIT: title | email -->
-					<h3>Validation Engineer | <a href="mailto:sameermarulkar@outlook.com" target="_blank">sameermarulkar@outlook.com</a></h3>
-				</div><!--/.col-lg-12 -->
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/.header -->
-
-
+	
 	<section id="about" name="about"></section>
-	<div class="about">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>ABOUT</h5>
-				</div>
-				<div class="col-lg-6">
-					<!-- EDIT: about -->
-					<p> Creative, open minded and equipped with sound computational skills, looking for opportunities in the AI/deep learning space.  </p>
-				</div>
-				<div class="col-lg-3">
-					<!-- EDIT: download link -->
-					<p><a href="my-resume.pdf" target="_blank"><i class="icon-file"></i> <sm>DOWNLOAD PDF</sm></a></p>
-				</div>
-
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #intro -->
-
-
-	<section id="resume" name="resume"></section>
-	<!-- EDUCATION SECTION -->
+	 <div class="about">
+	   <div class="container">
+		 <div class="row"> 
+		   <div class="col-lg-2 col-lg-offset-1">
+			 <h4><u>ABOUT</u></h4>
+		   </div>
+		   <div class="col-lg-6">
+	<p>Experienced with analyzing, understanding and reproducing high dimentional data. <br /> 
+	   Worked in the space of 3D pose estimation, scene reconstruction, video tracking, video generation, inpainting etc. - blending deep machine learning algorithms. <br /> 
+	   Decent understanding of transmission and reproduction of digital media i.e. CMS &#8594; CDNs &#8594; video players(client) and interlinked authentication systems <br /> 
+	   Interested in Generative Art, Character Motion Synthesis <br />
+		
+    </p>
+	</div>
+		   <div class="col-lg-3">
+			 <p><a href="my-resume.pdf"><i class="icon-file"></i> <sm>DOWNLOAD PDF</sm></a></p>
+		   </div>
+	 
+		 </div><!--/.row-->
+	   </div><!--/.container-->
+	 </div><!--/ #intro-->
+	 
+	 <!-- SKILLS -->
 	<div class="container desc">
 		<div class="row">
 
 				<div class="col-lg-2 col-lg-offset-1">
-					<h5>EDUCATION</h5>
+					<h4><b><u>SKILLS</u></b></h4>
 				</div>
-				<!-- EDIT: education line 1 -->
+				<!-- EDIT: work line 1 -->
 				<div class="col-lg-6">
-					<p><t>Master of Science </t><br/>
-						Cal. State University Long Beach
-						<!--<br/><i>Extra info here</i>-->
+					<p> Programming: Python, BASH, C++ <br/>
+						Libraries: TensorFlow, OpenCV, OpenAI Gym <br/>
+						Machine learning: StackGANs, WGANs, Convolutional LSTM, RNN, Auto-encoders <br/>
+						Computer vision: SLAM, Depth sensing, Sensor Fusion, 3D reconstruction, Inpainting <br/>
+						Reinforcement Learning: TD Lambda, RBF, HMM, Q-learning <br/>
+						<figure> 
+							<img src="mountainCarTry1.gif" alt="MountainCar" width="400" height="300"  border="1"> 
+							<img src="mountainCarTry2.gif" alt="MountainCar" width="400" height="300"  border="1"> 
+							<img src="mountainCarWinning.gif" alt="MountainCar" width="400" height="300"  border="1"> 
+							<figcaption> <p> Environment used: OpenAI Gym (0.8.1) - MountainCar-V0 <br/> 
+											 Reinforcement learning techniques implemented: <br/> 
+											 - TD Lambda (Monte Carlo samplings) - Q-learning + Radial Basis Function Kernel <br/>
+											 Programmed with: TensorFlow (1.1.0), Python (2.7.0) <br/> </p> </figcaption>
+						</figure> <br/>
 					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>WINTER 2016</sm></p>
-				</div>
 
-				<!-- EDIT: education line 2 -->
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Bachelor of Engineering </t><br/>
-						 University of Pune
-						<!--<br/><i>Extra info here</i>-->
-					</p>
 				</div>
-				<div class="col-lg-3">
-					<p><sm>AUG 2013</sm></p>
-				</div>
-
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
-
+   
 	<!-- WORK SECTION -->
 	<div class="container desc">
 		<div class="row">
 
 				<div class="col-lg-2 col-lg-offset-1">
-					<h5>WORK</h5>
+					<h4><b><u>WORK</u></b></h4>
 				</div>
 				<!-- EDIT: work line 1 -->
 				<div class="col-lg-6">
-					<p class="tight"><t>Validation Engineer </t><br/>
-						AT&T <br/>
-					</p>
-					<p><more> Responsible for Android TV App full stack design from ground up.
-                    4K UHD Video Transcoding algorithm validation.
-                    Python | React.js | SELinux </more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>APRIL 2016 - CURRENT <br />
-					EL Segundo, CA </sm></p>
-				</div>
+					<p style="text-align:left"; class="tight"><t> <b> Product Development Engineer </b> </t> <span style="float:right;">April 2016 - Present</span> <br/>
+						<b> AT&T </b> <span style="float:right;">Los Angeles, CA, USA</span><br/>
+					
+					<more> <b>Project II: FrontEnd team (Computer Vision/Generative Networks) </b><br/>
+						      •	D-Dash; Deep Q learning based video streaming <br/>
+							  •	Video component recognition <br/>
+							  •	StackGAN based Boot up animation splash screen transitions <br/><br/>
+							  
 
+							  <b>Project I: Multimedia Team </b><br/>
+							  •	Team sub-lead for proprietary Android TV box bootloader stack design, ExoPlayer and MediaPlayer integration to the Android software stack for Live Streaming and VoD solutions (now DIRECTVNOW). <br/> 
+								&nbsp; o Exposure to bootloader OTT secure upgrade process involving secure AWS CDN bucket calls, DNS remapping for system level testing, continuous build integration etc. <br/> 
+								&nbsp; o Experimented with Amazon cloudFront (custom SSL), application load balancers. <br/>
+								&nbsp; o Worked in codelab to experiment with ExoPlayer integration -to understand dynamic adaptive streaming over HTTP (DASH). <br/> 
+								&nbsp; o Involved in designing test plans for conforming (Bit-exact) HEVC decoding, HDCP 2.2 and 4K60 AvSync (LipSync) specifications for middleware set top boxes (STBs). <br/> <br/> </more></p>
+				</div>
+								
 				<!-- EDIT: work line 2-->
 				<div class="col-lg-6 col-lg-offset-3">
-					<p class="tight"><t>Embedded Systems Engineer - Intern</t><br/>
-						Theta Engineering <br/>
+					<p style="text-align:left"; class="tight"><t> <b> Embedded Software Developer</t> </b>  <span style="float:right;">April 2016 - Present</span> <br/>
+						<b> Theta Engineering </b> <span style="float:right;">Los Angeles, CA, USA</span>
 					</p>
-					<p><more> Architecting and designing end to end embedded solutions catering to Medical and Aerospace Industry.
-                    C++ | OpenCV | Python </more></p>
+					<p><more>Designing end to end embedded solutions catering to the aerospace industry in southern California. 
+							 </more> </p>
 				</div>
-				<div class="col-lg-3">
-					<p><sm>MAY 2015 - AUG 2015 <br />
-					Costa Messa, CA </sm></p>
+				
+				
+				<!-- EDIT: work line 3-->
+				<div class="col-lg-6 col-lg-offset-6">
+					<p class="tight"><t> <b> Algorithm Engineer</t> </b> <span style="float:right;">Jan 2014 - Aug 2014</span> <br/>
+						<b> MIT Media Lab </b> <span style="float:right;">Mumbai, India</span>
+					</p>
+					<p><more>Design Innovation Intern: <br/>
+						Part of a team developing gesture recognition/reconstruction algorithms: <br/>
+						&nbsp; • Developed application logic of 3D scanning and geometry processing algorithms using unity, p5.js. <br/> 
+						&nbsp; • Implemented GPU pipeline for 3D scanning similar to KinectFusion in openCV: <br/>
+						&nbsp; depth map registration ---> depth map fusion to sparse equivalent --> isosurface extraction (marching cubes algorithm) <br/>
+						&nbsp; • Implemented linear neural network based action classification algorithm in p5.js (vanilla 3-layer ANNs in JavaScript). <br/></more></p>
 				</div>
+								
+				<!-- EDIT: work line 4-->
+				<div class="col-lg-6 col-lg-offset-9">
+					<p class="tight"><t> <b> Intern - ICICI Future of Banking</t> </b> <span style="float:right;">Jan 2014 - Feb 2014</span> <br/>
+						<b> MIT Media Lab </b> <span style="float:right;">Mumbai, India</span>
+					</p>
+					<p><more></more></p>
+				</div>
+				
 		</div><!--/.row -->
 		<br>
 		<hr>
 	</div><!--/.container -->
-
-
-	<!-- AWARDS SECTION -->
-	<div class="container desc">
-		<div class="row">
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>sample projects</h5>
-				</div>
-
-				<!-- EDIT: awards line 1-->
-				<div class="col-lg-6">
-					<p><t>Project 1</t><br/>
-						Project details<br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>NOVEMBER 2013</sm></p>
-				</div>
-
-				<!-- EDIT: awards line 2-->
-				<div class="col-lg-6 col-lg-offset-3">
-					<p class="tight"><t>Project 2</t><br/>
-						Awards Site
-					</p>
-					<p><more>Project details</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2013</sm></p>
-				</div>
-
-		</div><!--/.row -->
-		<br>
-	</div><!--/.container -->
-
-
-	<section id="contact" name="contact"></section>
-	<!--FOOTER DESCRIPTION -->
+   
+   
+   <!--FOOTER DESCRIPTION -->
 	<div id="footwrap" class="footer">
 		<div class="container">
 			<div class="row">
-
+			
 				<div class="col-lg-2 col-lg-offset-1">
 					<h5>CONTACT</h5>
 				</div>
 				<!-- EDIT: email -->
 				<div class="col-lg-6">
 					<p><t>Email</t><br/>
-						<a href="mailto:sameermarulkar@outlook.com" target="_blank" class="mail">sameermarulkar@outlook.com</a> <br/>
+						<a href="mailto:sameermarulkar@outlook.com" class="mail">sameermarulkar@outlook.com</a> <br/>
 					</p>
 					<!-- EDIT: address -->
 					<p><t>Address</t><br/>
-						123 Some St. <br/>
-						City, State 01234 <br/>
-						United States of America<br/>
+						Palo Alto, CA <br/>
+						USA<br/>
 					</p>
 					<!-- EDIT: phone number -->
 					<p><t>Phone</t><br/>
-						<a href="tel:2345678901" class="tel">(234) 567-8901</a> <br/>
+						<a href="tel:2345678901" class="tel">(562) 735-9065</a> <br/>
 					</p>
 				</div>
 				<div class="col-lg-3">
 					<p><sm>SOCIAL LINKS</sm></p>
 					<p>
 						<!-- EDIT: Social Links. Replace # with your URL for each -->
-						<a href="sameermarulkar@github.com" target="_blank"><i class="icon-github"></i></a>
-						<a href="#" target="_blank"><i class="icon-linkedin"></i></a>
-						<!--<a href="#" target="_blank"><i class="icon-github"></i></a>-->
+						<a href="https://www.github.com/sameermarulkar">www.github.com/sameermarulkar<i class="ion-social-github-outline"> <br/> </i></a>
+						<a href="https://www.linkedin.com/in/sameermarulkar/">www.linkedin.com/in/sameermarulkar<i class="icon-linkedin"></i></a>
+						<!--<a href="#"><i class="icon-github"></i></a>-->
 					</p>
 				</div>
 			</div><!--/.row -->
 		</div><!--/.container -->
 	</div><!--/ #footer -->
-  </body>
+   
+</body>
 </html>
